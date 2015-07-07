@@ -1,0 +1,14 @@
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text">
+      <h4><perch:content id="title" type="text" label="title" required="true" title="true" /></h4>
+      <perch:content id="body" type="textarea" label="Body" size="s" required="true" /> 
+    </div>
+    <div class="mdl-card__actions">
+      <a href="<perch:content id="ctalink" type="text" label="Call to action link" required="true" />" class="mdl-button"><perch:content id="ctatext" type="text" label="Call to action text" required="true" /></a>
+    </div>
+  </div>
+
+  <perch:template path="content/material/mini-menu.html" />
+  
+</section>

@@ -1,0 +1,28 @@
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col"><perch:content id="title" type="text" label="title" required="true" title="true" /></h4>
+       
+       <perch:repeater label="List" id="list">
+       <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+        <div class="section__circle-container__circle mdl-color--primary"></div>
+      </div>
+       <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <h5><perch:content id="itemtitle" type="text" label="Item Title" required="true" /></h5>
+        <perch:content id="itembody" type="textarea" label="Item Body" size="xs" required="true" />
+       </div>
+       
+    
+   </perch:repeater>
+  
+
+ </div>
+    <div class="mdl-card__actions">
+      <a href="<perch:content id="ctalink" type="text" label="Call to action link" required="true" />" class="mdl-button"><perch:content id="ctatext" type="text" label="Call to action text" required="true" /></a>
+    </div>
+   </div>
+
+   <perch:template path="content/material/mini-menu.html" />
+ 
+
+</section>
