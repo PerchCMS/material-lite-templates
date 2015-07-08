@@ -1,9 +1,9 @@
-<perch:repeater id="minimenu" label="Mini Menu" help="Add some useful links" scope-parent="true" />
+<perch:repeater id="minimenu" label="Mini Menu" scope-parent="true" />
   <perch:before>
-    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn<perch:content id="parent._block_id" type="hidden" />">
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn_<perch:content id="parent.perch_item_index" type="hidden" /><perch:content id="parent._block_id" type="hidden" />">
     <i class="material-icons">more_vert</i>
     </button>
-    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn<perch:content id="parent._block_id" type="hidden" />">
+    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn_<perch:content id="parent.perch_item_index" type="hidden" /><perch:content id="parent._block_id" type="hidden" />">
   </perch:before>
 
     <li class="mdl-menu__item"><a href="<perch:content type="text" id="menulink" label="Link" />"><perch:content type="text" id="menutext" label="Link text" /></a></li>
